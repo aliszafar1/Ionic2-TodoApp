@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Signup</ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding>
+  <h2>Signup................</h2>
+  <form (ngSubmit)="signup(myForm.value)" [formGroup]="myForm">
+    <input type="text" placeholder="Username" [formControl]="myForm.controls['uname']"><br>
+    <input type="text" placeholder="Password" [formControl]="myForm.controls['pswd']"><br>
+    <button ion-button type="submit">Signup  ;)</button>
+  </form>
+</ion-content>
